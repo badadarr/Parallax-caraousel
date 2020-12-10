@@ -26,6 +26,7 @@ struct Home: View {
                     .cornerRadius(15)
             }
         }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
     }
 }
 
