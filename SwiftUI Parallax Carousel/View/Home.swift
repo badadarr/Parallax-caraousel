@@ -26,6 +26,10 @@ struct Home: View {
                     Image("p\(index)")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
+                        // moving view in opposite side
+                        // when user starts to swipe...
+                        // this will create parallax effect...
+                        .offset(x: -reader.frame(in: .global).minX)
                         .frame(width: width, height: height / 2)
                         .cornerRadius(15)
                 }
